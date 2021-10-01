@@ -1,0 +1,26 @@
+//
+// _plans.scss
+//
+.pricing-table {
+    .pricing-plan {
+        .pricing-features {
+            li {
+                border-top: 1px solid $gray-200;
+                padding: 15px 0;
+                &:last-child {
+                    border-bottom: 1px solid $gray-200;
+                }
+            }
+        }
+        &.business-plan {
+            .pricing-features {
+                li {
+                    border-top: 1px solid $gray-400;
+                    &:last-child {
+                        border-bottom: 1px solid $gray-400;
+                    }
+                }
+            }
+        }
+    }
+}

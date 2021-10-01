@@ -1,0 +1,42 @@
+//
+// .scss
+//
+.service-wrapper {
+    transition: all 0.5s ease;
+    .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 45px;
+        transition: all 0.5s ease; 
+        transform: rotate(-22.5deg);
+    }
+    .content {
+        .title {
+            transition: all 0.5s ease;
+            font-weight: 500;
+        }
+    }
+    .big-icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.05;
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        box-shadow: $shadow-lg !important;
+        background: $white;
+        transform: translateY(-8px);
+        border-color: transparent !important;
+        .icon {
+            background: rgba($primary, 1) !important;
+            color: $white !important;
+            transform: rotate(0);
+        }
+        .big-icon {
+            z-index: -1;
+            opacity: 0.1;
+            font-size: 200px;
+        }
+    }
+}
